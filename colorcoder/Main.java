@@ -2,9 +2,7 @@
 package colorcoder;
 
 import java.util.Scanner;
-
-
-  public class Main {
+public class Main {
       final static String MajorColorNames[] = {
           "White", "Red", "Black", "Yellow", "Violet"
       };      
@@ -23,8 +21,8 @@ import java.util.Scanner;
           return new ColorPair(majorColor, minorColor);
       }
       
-      public static int getPairNumberFromColor(MajorColor major, MinorColor minor) {
-          return major.getIndex() * numberOfMinorColors + minor.getIndex() + 1;
+      public static int getPairNumberFromColor(MajorColor majorColor, MinorColor minorColor) {
+          return majorColor.getIndex() * numberOfMinorColors + minorColor.getIndex() + 1;
       }  
 
       public static void main(String[] args) {
@@ -34,8 +32,8 @@ import java.util.Scanner;
         String majorColor = inputFromUser.nextLine().trim().toUpperCase();
         System.out.println("Enter the Minor color : ");
         String minorColor = inputFromUser.nextLine().trim().toUpperCase();       
-        int PairNumber = (getPairNumberFromColor(MajorColor.valueOf(majorColor), MinorColor.valueOf(minorColor)));
-        System.out.println(PairNumber);
+        int pairNumber = (getPairNumberFromColor(MajorColor.valueOf(majorColor), MinorColor.valueOf(minorColor)));
+        System.out.println("ColorCode is : " + pairNumber);
       }
   }
 
