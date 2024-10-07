@@ -1,7 +1,7 @@
 
 package colorcoder;
-
 import java.util.Scanner;
+
 public class Main {
       final static String MAJOR_COLORS[] = {
           "White", "Red", "Black", "Yellow", "Violet"
