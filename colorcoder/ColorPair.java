@@ -6,10 +6,10 @@ public class ColorPair {
   private MajorColor majorColor;
   private MinorColor minorColor;
   
-  public ColorPair(MajorColor major, MinorColor minor)
+  public ColorPair(MajorColor majorColor, MinorColor minorColor)
   {
-      majorColor = major;
-      minorColor = minor;
+      this.majorColor = majorColor;
+      this.minorColor = minorColor;
   }
   public MajorColor getMajor() {
       return majorColor;
