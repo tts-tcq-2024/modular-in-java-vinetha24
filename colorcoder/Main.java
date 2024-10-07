@@ -32,10 +32,9 @@ public class Main {
         String majorColor = inputFromUser.nextLine().trim().toUpperCase();
         System.out.println("Enter the Minor color : ");
         String minorColor = inputFromUser.nextLine().trim().toUpperCase(); 
-        if(MAJOR_COLORS.toString().contains(majorColor)){
         int pairNumber = (getPairNumberFromColor(MajorColor.valueOf(majorColor), MinorColor.valueOf(minorColor)));
         System.out.println("ColorCode is : " + pairNumber);
-        }
+        
       }
   }
 
